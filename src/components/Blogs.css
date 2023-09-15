@@ -1,0 +1,24 @@
+.fullCard{
+    width: 350px;
+    height: 420px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.fullCart{
+    width: 400px;
+    height: 500px;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+.btn{
+    background-color: #2F80ED;
+    border-radius: 6px;
+    padding: 5px 130px;
+    color: white;
+    font-weight: bold;
+}
+.img{
+    width: 350px;
+}
