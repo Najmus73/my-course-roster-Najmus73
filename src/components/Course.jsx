@@ -1,7 +1,7 @@
-import './Blogs.css'
+import './Course.css'
 import { FiDollarSign,FiBookOpen } from 'react-icons/fi';
-const Blog = ({blog,handleAddName}) =>{
-    const {image,title,details,price,credit}=blog
+const Course = ({blog,handleAddName}) =>{
+    const {image,title,details,price,credit}=blog;
     return(
         
     <div className="fullCard">
@@ -20,7 +20,8 @@ const Blog = ({blog,handleAddName}) =>{
     </div>
   </div>
 </div>
+
       
     )
 }
-export default Blog;
+export default Course;
