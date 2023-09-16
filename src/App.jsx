@@ -10,6 +10,7 @@ function App() {
   const [totalCredit,setTotalCredit] =useState(0)
   const [totalUsd,setTotalUsd] =useState(0)
   
+  
   const handleAddName = name =>{
     const isExist = selects.find(item => item.id == name.id);
     let count = name.credit;
