@@ -8,6 +8,7 @@ function App() {
   const [selects,setSelects] = useState([]);
   const [remaining,setRemaining] =useState(20)
   const [totalCredit,setTotalCredit] =useState(0)
+  const [totalUsd,setTotalUsd] =useState(0)
   
   const handleAddName = name =>{
     const isExist = selects.find(item => item.id == name.id);
@@ -28,7 +29,11 @@ function App() {
       setSelects(newSelect);
       }
     }
-     
+    let odd = name.price;
+    selects.forEach(money =>{
+       odd = odd + money.price;
+    })
+    setTotalUsd(odd); 
   }
   return (
     <>
@@ -37,9 +42,12 @@ function App() {
       <h1 className='text-3xl font-bold text-center py-10'>Course Registration</h1>
       <div style={{display:'flex',gap:'25px',justifyContent:'center'}}>
       <Blogs handleAddName={handleAddName}></Blogs>
-      <Carts selects={selects}
+      <Carts 
+      selects={selects}
       remaining={remaining}
-      totalCredit={totalCredit}></Carts>
+      totalCredit={totalCredit}
+      totalUsd={totalUsd}>
+      </Carts>
       </div>
       
       </div>
