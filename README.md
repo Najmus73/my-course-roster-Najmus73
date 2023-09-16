@@ -1,8 +1,18 @@
-# React + Vite
+# Questions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* 3 Features for this project - 
 
-Currently, two official plugins are available:
+1.useState
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.useEffect
+
+3.Fetch json data
+
+
+* How I managed the state in my assignment project -
+
+With use of useEffect fetch some data from a json file. Then set all data on a useState variable.
+Then make some condition by if else for set some features on Cart section. Create a click handle
+and put all condition that website visitor can access some information. Main features are use in
+this project - useState useEffect fetch json
+
